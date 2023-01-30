@@ -1,0 +1,14 @@
+<% layout('./layouts/boilerplate') %> 
+<h1> Edit Field</h1>
+<form action="/fields/<%= field._id %>?_method=PUT" method="POST">
+    <div>
+        <label for="name"> Name </label>
+        <input type="text" id="name" name="field[name]" value= "<%= field.name %> ">
+    </div>
+    <div>
+        <label for="location"> Location </label>
+        <input type="text" id="location" name="field[location]" value= "<%= field.location %> ">
+    </div>
+    <button> Update Field </button>
+</form>
+<a href="/fields/<%= field._id %>"> Back to Field </a>

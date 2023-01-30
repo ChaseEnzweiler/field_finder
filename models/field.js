@@ -8,4 +8,4 @@ const fieldSchema = new Schema ({
     location:String
 });
 
-module.exports = mongoose.model('field', fieldSchema);
+module.exports = mongoose.model('Field', fieldSchema);

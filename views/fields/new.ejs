@@ -1,0 +1,13 @@
+<% layout('./layouts/boilerplate') %> 
+<form action="/fields" method="POST">
+    <div>
+        <label for="name"> Name </label>
+        <input type="text" id="name" name="field[name]">
+    </div>
+    <div>
+        <label for="location"> Location </label>
+        <input type="text" id="location" name="field[location]">
+    </div>
+    <button> Add Field </button>
+</form>
+<a href="/fields"> All Fields</a>

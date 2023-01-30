@@ -1,0 +1,10 @@
+<% layout('./layouts/boilerplate') %> 
+<h1>All Fields</h1>
+<div>
+    <a href="/fields/new"> Add Campground</a>
+</div>
+<ul>
+    <% for (let field of fields) {%>
+        <li> <a href="/fields/<%= field.id %>"> <%= field.name %></a> </li>
+    <% }%>
+</ul>
