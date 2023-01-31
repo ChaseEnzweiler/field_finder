@@ -24,7 +24,8 @@ const seedDB = async () => {
 
         const place = new Field({
             location: `${cities[random1000].city}, ${cities[random1000].state}`,
-            name: `${sample(adj)} ${sample(noun)}`
+            name: `${sample(adj)} ${sample(noun)}`,
+            image: 'https://source.unsplash.com/collection/483251'
         })
         await place.save();
     }

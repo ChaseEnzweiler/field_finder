@@ -3,8 +3,20 @@
 <div>
     <a href="/fields/new"> Add Campground</a>
 </div>
-<ul>
-    <% for (let field of fields) {%>
-        <li> <a href="/fields/<%= field.id %>"> <%= field.name %></a> </li>
-    <% }%>
-</ul>
+
+<% for (let field of fields) {%>
+    <div class="card" mb-3>
+        <div class="col-md-4">
+            <img class="img-fluid" alt="" src="<%= field.image %>">
+        </div>
+        <div class="col-md-8">
+            <div class="card-body">
+                <h5 class="card-title"><%= field.name %></h5>
+                <p class="card"> <%= field.location %> </p>
+                <a class="btn btn-primary" href="/fields/<%= field._id %> "> View <%= field.name %> </a>
+            </div>
+        </div>
+
+    </div>>
+<% }%>
+
