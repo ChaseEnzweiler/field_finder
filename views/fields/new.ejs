@@ -1,13 +1,16 @@
 <% layout('./layouts/boilerplate') %> 
-<form action="/fields" method="POST">
+<form action="/fields" method="POST" novalidate class="needs-validation">
     <div>
         <label for="name"> Name </label>
-        <input type="text" id="name" name="field[name]">
+        <input type="text" id="name" name="field[name]" required>
     </div>
     <div>
         <label for="location"> Location </label>
-        <input type="text" id="location" name="field[location]">
+        <input type="text" id="location" name="field[location]" required>
     </div>
     <button> Add Field </button>
 </form>
 <a href="/fields"> All Fields</a>
+
+
+
